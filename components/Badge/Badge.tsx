@@ -1,15 +1,13 @@
 import {Box} from '../Box';
-import React from 'react';
+import React, {PropsWithChildren} from 'react';
 import {Text} from '../Text';
 
-export interface BadgeProps {
-  text: string;
-}
+export interface BadgeProps extends PropsWithChildren {}
 
 /**
  * Add documentation for Badge
  */
-export function Badge({text}: BadgeProps) {
+export function Badge({children}: BadgeProps) {
   return (
     <Box
       flexDirection="row"
@@ -18,9 +16,9 @@ export function Badge({text}: BadgeProps) {
       justifyContent="center"
       paddingHorizontal="s"
       paddingVertical="s"
-      borderRadius={10}
+      borderRadius={20}
       backgroundColor="cardPrimaryBackground">
-      <Text color="mainBackground">{text}</Text>
+      <Text color="mainBackground">{children}</Text>
     </Box>
   );
 }

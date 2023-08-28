@@ -5,5 +5,5 @@ import React from 'react';
  * Default Badge
  */
 export function DefaultBadge() {
-  return <Badge text="Badge" />;
+  return <Badge>Badge</Badge>;
 }
