@@ -11,9 +11,9 @@ import {theme} from './components/theme';
 import React from 'react';
 
 installTestify({
-  //   appWrapper: ({children}) => {
-  //     return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
-  //   },
+  appWrapper: ({children}) => {
+    return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  },
   screenshotTestLoaderProvider: () => require('./screenshotTestLoader'),
 });
 

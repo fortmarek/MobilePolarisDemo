@@ -2,7 +2,7 @@
 
 require "cli/ui"
 
-# POLARIS_DIR = "packages/polaris/components"
+POLARIS_DIR = "./components"
 
 COMPONENT_TEMPLATE = "export interface $COMPONENT_NAMEProps {
   exampleProp: string;
@@ -22,6 +22,7 @@ INDEX_TEMPLATE = "export {$COMPONENT_NAME, $COMPONENT_NAMEProps} from './$COMPON
 "
 
 STORYBOOK_TEMPLATE = "import {storiesOf} from '@storybook/react-native';
+import React from 'react';
 
 import {Default$COMPONENT_NAME} from './$COMPONENT_NAME.examples';
 
@@ -29,6 +30,7 @@ storiesOf('Polaris', module).add('$COMPONENT_NAME', () => <Default$COMPONENT_NAM
 "
 
 SCREENSHOTS_TEMPLATE = "import {createScreenshotTest} from '@shopify/react-native-testify';
+import React from 'react';
 
 import {Default$COMPONENT_NAME} from './$COMPONENT_NAME.examples';
 
@@ -38,6 +40,7 @@ createScreenshotTest('$COMPONENT_NAME')
 "
 
 EXAMPLES_TEMPLATE = "import {$COMPONENT_NAME} from './$COMPONENT_NAME';
+import React from 'react';
 
 /**
  * Default $COMPONENT_NAME
@@ -50,7 +53,6 @@ export function Default$COMPONENT_NAME() {
 @component_name = CLI::UI.ask("Provide a name for your component in CamelCase")
 
 COMPONENT_DIR = POLARIS_DIR + "/" + @component_name
-COMPONENT_DIR = ""
 
 def content(template:)
   template
