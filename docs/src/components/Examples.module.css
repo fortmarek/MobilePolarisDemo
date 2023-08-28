@@ -1,0 +1,45 @@
+.OSExamplesButton[aria-selected='true'] {
+  border-bottom-color: #f0f0f0;
+  color: black;
+}
+
+.ExamplesContainer {
+  padding: 10px 0px;
+}
+
+.ExampleTab {
+  font-size: var(--font-size-050);
+  padding: 6px 8px;
+  border: 1px solid #eee;
+  margin: 4px;
+  font-weight: 500;
+  border-radius: var(--border-radius-400);
+}
+
+.ExampleTab:hover {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 0 0 0.5px var(--border-color);
+  background-color: transparent;
+}
+
+.ExampleTab[aria-selected='true'] {
+  border: 2px solid var(--ifm-color-black);
+  border-radius: var(--border-radius-400);
+  color: var(--ifm-color-black);
+  padding: 6px 8px;
+}
+
+.ExampleScreenshotContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.PlatformContainer {
+  margin-bottom: 20px;
+  max-width: 45%;
+  margin-right: 10px;
+}
+
+.codeBlock {
+  font-size: var(--font-size-100);
+}

@@ -417,6 +417,8 @@ PODS:
     - React-jsi (= 0.71.4)
     - React-logger (= 0.71.4)
     - React-perflogger (= 0.71.4)
+  - ReactNativeTestify (0.0.8):
+    - React-Core
   - RNCAsyncStorage (1.19.3):
     - React-Core
   - RNDateTimePicker (6.7.5):
@@ -487,6 +489,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "ReactNativeTestify (from `../node_modules/@shopify/react-native-testify`)"
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - "RNDateTimePicker (from `../node_modules/@react-native-community/datetimepicker`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -580,6 +583,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  ReactNativeTestify:
+    :path: "../node_modules/@shopify/react-native-testify"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
   RNDateTimePicker:
@@ -592,7 +597,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: 446e84642979fff0ba57f3c804c2228a473aeac2
-  FBReactNativeSpec: 5bb2b3acd1c611a65e231f0faeae1565b8b9f3ed
+  FBReactNativeSpec: 241709e132e3bf1526c1c4f00bc5384dd39dfba9
   Flipper: 26fc4b7382499f1281eb8cb921e5c3ad6de91fe0
   Flipper-Boost-iOSX: fd1e2b8cbef7e662a122412d7ac5f5bea715403c
   Flipper-DoubleConversion: 2dc99b02f658daf147069aad9dbd29d8feb06d30
@@ -636,6 +641,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: ad17efcfb2fa8f6bfd8ac0cf48d96668b8b28e0b
   React-runtimeexecutor: 8fa50b38df6b992c76537993a2b0553d3b088004
   ReactCommon: b49a4b00ca6d181ff74b17c12b2d59ac4add0bde
+  ReactNativeTestify: 8a4b8f0e5af221fceb3967d757c3bb521edb636e
   RNCAsyncStorage: c913ede1fa163a71cea118ed4670bbaaa4b511bb
   RNDateTimePicker: 65e1d202799460b286ff5e741d8baf54695e8abd
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17

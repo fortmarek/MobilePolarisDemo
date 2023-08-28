@@ -1,11 +1,18 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <ReactNativeTestify/ReactNativeTestify.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  if (!self.bridge) {
+    self.bridge = [self createBridgeWithDelegate:self launchOptions:launchOptions];
+  }
+  if ([ReactNativeTestify runScreenshotTestsIfEnabledInWindow: self.window withBridge: self.bridge]) {
+    return YES;
+  }
   self.moduleName = @"MobilePolarisDemo";
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.

@@ -1,0 +1,7 @@
+.ComponentImage {
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}

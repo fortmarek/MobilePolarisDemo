@@ -1,0 +1,70 @@
+.ComponentGrid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr));
+}
+
+.ComponentGrid a:link,
+.ComponentGrid a:visited,
+.ComponentGrid p {
+  color: var(--ifm-color-primary-contrast-foreground);
+}
+
+.ComponentGrid a:hover {
+  text-decoration: none;
+}
+
+.ComponentGridItem {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-width: 0.5px;
+  border-color: var(--border-color);
+  border-style: solid;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.ComponentGridItem:hover {
+  box-shadow: var(--card-shadow-hover);
+  transition: all 100ms ease-out;
+}
+
+.ComponentGridItem_TextBox {
+  padding: 10px 20px 10px 20px;
+  background-color: var(--surface);
+  z-index: -1;
+}
+
+.ComponentGridItem p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0;
+}
+
+.ComponentGridItem h3 {
+  margin: 0 0.5rem 0 0;
+}
+
+.ComponentGridItem_ImageBoxBackground {
+  background-color: #fafafa;
+  z-index: -1;
+}
+
+.ComponentGridItem_ImageBox {
+  margin: 20px;
+  display: grid;
+  justify-content: center;
+  height: 10rem;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ComponentGridItem_TitleBox {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
