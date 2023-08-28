@@ -10,6 +10,7 @@
   if (!self.bridge) {
     self.bridge = [self createBridgeWithDelegate:self launchOptions:launchOptions];
   }
+  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   if ([ReactNativeTestify runScreenshotTestsIfEnabledInWindow: self.window withBridge: self.bridge]) {
     return YES;
   }
