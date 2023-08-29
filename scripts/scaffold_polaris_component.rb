@@ -4,14 +4,14 @@ require "cli/ui"
 
 POLARIS_DIR = "./components"
 
-COMPONENT_TEMPLATE = "export interface $COMPONENT_NAMEProps {
+COMPONENT_TEMPLATE = "import React from 'react';
+
+export interface $COMPONENT_NAMEProps {
   exampleProp: string;
 }
 
 /**
  * Add documentation for $COMPONENT_NAME
- *
- * @section Add appropriate sub-section for the mobile docs site components listing (if applicable)
  */
 export function $COMPONENT_NAME({exampleProp}: $COMPONENT_NAMEProps) {
   return null;
@@ -30,13 +30,10 @@ storiesOf('Polaris', module).add('$COMPONENT_NAME', () => <Default$COMPONENT_NAM
 "
 
 SCREENSHOTS_TEMPLATE = "import {createScreenshotTest} from '@shopify/react-native-testify';
-import React from 'react';
-
 import {Default$COMPONENT_NAME} from './$COMPONENT_NAME.examples';
 
 createScreenshotTest('$COMPONENT_NAME')
   .add(Default$COMPONENT_NAME)
-  .add('Polaris docs', () => <Default$COMPONENT_NAME />);
 "
 
 EXAMPLES_TEMPLATE = "import {$COMPONENT_NAME} from './$COMPONENT_NAME';

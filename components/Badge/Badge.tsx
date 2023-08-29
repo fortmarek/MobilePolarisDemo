@@ -1,5 +1,5 @@
-import {Box} from '../Box';
 import React, {PropsWithChildren} from 'react';
+import {Box} from '../Box';
 import {Text} from '../Text';
 
 export interface BadgeProps extends PropsWithChildren {}
