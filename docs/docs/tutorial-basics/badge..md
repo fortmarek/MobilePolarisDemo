@@ -16,7 +16,7 @@ Badges are used to inform merchants of the status of an object or of an action t
 examples={[
 {
 title: "Default Badge",
-content: "import {Badge} from '@shopify/polaris-react-native';add-newlineadd-newlineexport function DefaultBadge() {add-newline return <Badge text=\"Attention\" />;add-newline}add-newline",
+content: "import {Badge} from '@shopify/polaris-react-native';add-newlineadd-newlineexport function DefaultBadge() {add-newline return <Badge>Badge</Badge>;add-newline}add-newline",
 iOSImage: "/img/ios/Badge_DefaultBadge.png",
 androidImage: "/img/generated/android/Badge_AttentionMediumEmphasis.png",
 }
